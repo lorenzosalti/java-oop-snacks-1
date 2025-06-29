@@ -45,4 +45,13 @@ public class Studente {
     }
   }
 
+  public String getStudenteInfos() {
+    if (this.firstName != null && this.lastName != null && this.age != 0) {
+      String infos = this.firstName + " " + this.lastName + ", " + this.age + " anni";
+      return infos;
+    } else {
+      return "Missing Informations";
+    }
+  }
+
 }
