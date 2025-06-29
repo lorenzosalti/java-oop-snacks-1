@@ -20,6 +20,10 @@ public class ContoBancario {
   }
 
   // METHODS
+  public int getAccountNumber() {
+    return this.accountNumber;
+  }
+
   public BigDecimal getBalance() {
     return this.accountBalance;
   }
