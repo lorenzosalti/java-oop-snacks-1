@@ -16,20 +16,29 @@ public class Main {
     System.out.println(pesca.getStudenteInfos());
     System.out.println(margherita.getStudenteInfos());
 
+    RegistroStudenti registro1 = new RegistroStudenti();
+
+    registro1.addStudente(mario);
+    registro1.addStudente(luigi);
+    registro1.addStudente(pesca);
+    registro1.addStudente(margherita);
+
+    System.out.println(registro1.getStudenti());
+
     // CONTO BANCARIO
-    ContoBancario conto1 = new ContoBancario(12345);
-    ContoBancario conto2 = new ContoBancario(54321);
+    // ContoBancario conto1 = new ContoBancario(12345);
+    // ContoBancario conto2 = new ContoBancario(54321);
 
-    conto1.deposit(new BigDecimal(2000000));
-    conto2.deposit(new BigDecimal(15.76));
+    // conto1.deposit(new BigDecimal(2000000));
+    // conto2.deposit(new BigDecimal(15.76));
 
-    System.out.println(conto1.getBalance());
-    System.out.println(conto2.getBalance());
+    // System.out.println(conto1.getBalance());
+    // System.out.println(conto2.getBalance());
 
-    conto1.withdraw(new BigDecimal(5000));
-    conto2.withdraw(new BigDecimal(5));
+    // conto1.withdraw(new BigDecimal(5000));
+    // conto2.withdraw(new BigDecimal(5));
 
-    System.out.println(conto1.getBalance());
-    System.out.println(conto2.getBalance());
+    // System.out.println(conto1.getBalance());
+    // System.out.println(conto2.getBalance());
   }
 }
